@@ -8,7 +8,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class TeacherNotebookTest {
-/*
+
 
     @Test
     void readFromFileTest(){
@@ -19,12 +19,13 @@ class TeacherNotebookTest {
         tn.readFromFile(Path.of("src/test/resources/data.csv"));
 
         assertEquals(8, tn.getStudents().size());
+        System.out.println(tn.getStudents().get(1).getGrades());
         assertEquals(6, tn.getStudents().get(1).getGrades().size());
         assertEquals(4, tn.getStudents().get(4).getGrades().size());
 
     }
 
-
+/*
     @Test
     void testFindFailingStudents(){
         TeacherNotebook tn = new TeacherNotebook();
@@ -36,4 +37,6 @@ class TeacherNotebookTest {
 
 
  */
+
+
 }

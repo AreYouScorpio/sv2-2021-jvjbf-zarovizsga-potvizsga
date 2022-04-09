@@ -1,9 +1,5 @@
 package students;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,9 +8,15 @@ public class Student {
     private String className;
     private List<Integer> grades = new ArrayList<>();
 
-    public Student(String className, String clas) {
+    public Student(String className, String clas, List<Integer> grades) {
         this.name = className;
         this.className = clas;
+        this.grades = grades ;
+    }
+
+    public Student(String name, String className) {
+        this.name = name;
+        this.className = className;
     }
 
     public String getName() {
@@ -32,38 +34,12 @@ public class Student {
         grades.add(note);
     }
 
-    public void readFromFile(Path inputfile) {
-        String name = null;
-        String clas = null;
-        String notes = null;
-
-        int rowNumber = 0;
-        try (
-                BufferedReader br = Files.newBufferedReader(inputfile)) {
-            String line;
-            while ((line = br.readLine()) != null) {
-
-                name = parseName(line);
-                clas = parseClas(line);
-                // notes = parseNotes(line);
-                System.out.println(name + clas);
-                //notes.add(new Student(name, clas));
-            }
-            rowNumber++;
-        } catch (IOException e) {
-            throw new IllegalArgumentException("Cannot read file: " + inputfile);
-        }
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", className='" + className + '\'' +
+                ", grades=" + grades +
+                '}';
     }
-
-    private String parseName(String line) {
-        String[] tempStr = line.split(";");
-        return tempStr[0];
-    }
-
-    private String parseClas(String line) {
-        String[] tempStr = line.split(";");
-        return tempStr[1];
-    }
-
-
 }
