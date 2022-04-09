@@ -12,7 +12,7 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MessageServiceTest {
-
+/*
     Flyway flyway;
     MessageRepository messageRepository;
     UserRepository userRepository;
@@ -88,4 +88,6 @@ class MessageServiceTest {
     }
 
 
+
+ */
 }

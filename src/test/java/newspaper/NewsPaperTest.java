@@ -9,6 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class NewsPaperTest {
 
+    /*
     NewsPaper newsPaper;
 
     @BeforeEach
@@ -86,4 +87,6 @@ class NewsPaperTest {
 
     }
 
+
+     */
 }

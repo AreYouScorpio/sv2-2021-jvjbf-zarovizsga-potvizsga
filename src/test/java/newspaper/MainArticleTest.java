@@ -8,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MainArticleTest {
 
+    /*
 
     @Test
     void createMainArticleTest() {
@@ -63,4 +64,6 @@ class MainArticleTest {
        assertFalse(article.equals(article2));
     }
 
+
+     */
 }

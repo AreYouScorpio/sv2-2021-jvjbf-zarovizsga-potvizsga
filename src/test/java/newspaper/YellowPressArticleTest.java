@@ -7,7 +7,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class YellowPressArticleTest {
-
+/*
     @Test
     void createYellowPressArticleTest(){
         Article article = new YellowPressArticle(
@@ -66,5 +66,7 @@ class YellowPressArticleTest {
     }
 
 
+
+ */
 
 }

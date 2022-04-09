@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class UserRepositoryTest {
 
-
+/*
     Flyway flyway;
     UserRepository userRepository;
 
@@ -58,5 +58,7 @@ class UserRepositoryTest {
 
 
 
+
+ */
 
 }

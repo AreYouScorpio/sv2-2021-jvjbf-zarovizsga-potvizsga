@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class UserTest {
 
-
+/*
     @Test
     void createUserTest(){
         User user = new User("johndoe");
@@ -17,4 +17,6 @@ class UserTest {
         assertEquals("johndoe",user.getUsername());
     }
 
+
+ */
 }
