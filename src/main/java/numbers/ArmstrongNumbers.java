@@ -21,7 +21,7 @@ public class ArmstrongNumbers {
 
     public boolean isArmstrongNumber(int number) {
 
-        if (number<0) throw new IllegalArgumentException("Number can't be negative: "+number);
+        if (number < 0) throw new IllegalArgumentException("Number can't be negative: " + number);
 
         getCharArray(number);
 
